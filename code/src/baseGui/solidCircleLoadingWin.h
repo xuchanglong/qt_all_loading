@@ -12,6 +12,7 @@ public:
         {
             m_msec_by_one_degree = 0;
         }
+        QString m_str_background_color;
         QColor m_lightest_color;
         QColor m_darkest_color;
         unsigned char m_msec_by_one_degree;
@@ -22,7 +23,7 @@ public:
     ~SolidCircleLoadingWin();
 
 public:
-    inline void setParas(sInfo info) { m_info = info; };
+    void setParas(sInfo info);
     void start();
     void end();
 

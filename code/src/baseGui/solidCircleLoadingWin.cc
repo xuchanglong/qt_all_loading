@@ -7,8 +7,6 @@ SolidCircleLoadingWin::SolidCircleLoadingWin(QWidget *parent)
     m_timer_id = 0;
     m_rotation_degree = 0;
     setWindowFlag(Qt::FramelessWindowHint);
-    //setWindowOpacity(0);
-    setStyleSheet("SolidCircleLoadingWin{background:red;}");
 }
 
 SolidCircleLoadingWin::~SolidCircleLoadingWin()
@@ -29,6 +27,12 @@ void SolidCircleLoadingWin::end()
     killTimer(m_timer_id);
     return;
 }
+
+void SolidCircleLoadingWin::setParas(sInfo info)
+{
+    m_info = info;
+    setStyleSheet("SolidCircleLoadingWin{background:" + m_info.m_str_background_color + ";}");
+};
 
 void SolidCircleLoadingWin::paintEvent(QPaintEvent *e)
 {
