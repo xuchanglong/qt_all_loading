@@ -2,6 +2,7 @@
 #define MYWIDGET_H_
 
 #include "baseGui/solidCircleLoadingWin.h"
+#include "baseGui/dotCircleLoadingWin.h"
 
 class MyWidget : public QWidget {
     Q_OBJECT
@@ -12,9 +13,11 @@ public:
 
 private:
     void InitSolidCircleLoadingWin();
+    void InitDotCircleLoadingWin();
 
 private:
     SolidCircleLoadingWin *m_pSolidCircleLoadingWin;
+    DotCircleLoadingWin *m_pDotCircleLoadingWin;
 };
 
 #endif
