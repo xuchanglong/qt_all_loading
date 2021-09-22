@@ -1,0 +1,6 @@
+# !/bin/sh
+if [ "$1" = "upgrade" ] ; then
+    echo "upgrade"
+elif [ "$1" = "remove" ] || [ "$1" = "purge" ] ; then
+    echo "remove"
+fi

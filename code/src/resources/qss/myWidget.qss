@@ -1,0 +1,9 @@
+MyWidget
+{
+    background:#ffffff;
+}
+
+QLabel#m_pLabelLoading
+{
+    border-image:url(:/img/loading.png);
+}

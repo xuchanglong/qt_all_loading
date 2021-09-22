@@ -1,0 +1,4 @@
+# !/bin/sh
+if [ "$1" = "upgrade" ] || [ "$1" = "install" ];then
+    echo "install"
+fi

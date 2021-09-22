@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/qss/">
+        <file alias="myWidget.qss">qss/myWidget.qss</file>
+    </qresource>
+    <qresource prefix="/img/">
+        <file alias="loading.png">images/loading.png</file>
+    </qresource>
+</RCC>

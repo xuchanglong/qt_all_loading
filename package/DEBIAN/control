@@ -1,0 +1,9 @@
+Package: cmakeBaseQt 
+Version: 1.0.0 
+Section: free 
+Priority: optional 
+Essential: no 
+Architecture: amd64
+Maintainer: xclsoftware@163.com 
+Provides: xcl 
+Description: Basic qt project

@@ -1,0 +1,3 @@
+code/build
+*.deb
+cmake_base_qt
