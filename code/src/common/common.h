@@ -8,6 +8,7 @@ public:
 
 public:
     static void readQssFile(QString strQssFile, QWidget *pWidget);
+    static void moveWin2ScreenCenter(QWidget *);
 };
 
 #endif

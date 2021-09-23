@@ -5,8 +5,10 @@ MyWidget::MyWidget(QWidget *parent)
     : QWidget(parent)
 {
     setFixedSize(500, 400);
+    Common::moveWin2ScreenCenter(this);
     InitSolidCircleLoadingWin();
     InitDotCircleLoadingWin();
+    InitCustomProgressIndicator();
 }
 
 MyWidget::~MyWidget()
@@ -38,5 +40,15 @@ void MyWidget::InitDotCircleLoadingWin()
     m_pDotCircleLoadingWin->setMaxDiameter(10);
     m_pDotCircleLoadingWin->setMinDiameter(2);
     m_pDotCircleLoadingWin->start();
+    return;
+}
+
+void MyWidget::InitCustomProgressIndicator()
+{
+    m_pCustomProgressIndicator = new CustomProgressIndicator(this);
+    m_pCustomProgressIndicator->setGeometry(250, 50, 50, 50);
+    m_pCustomProgressIndicator->setColor("#00B64B");
+    m_pCustomProgressIndicator->setAnimationDelay(50);
+    m_pCustomProgressIndicator->startAnimation();
     return;
 }
