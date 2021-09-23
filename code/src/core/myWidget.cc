@@ -32,7 +32,7 @@ void MyWidget::InitDotCircleLoadingWin()
 {
     m_pDotCircleLoadingWin = new DotCircleLoadingWin(this);
     m_pDotCircleLoadingWin->setObjectName("m_pDotCircleLoadingWin");
-    m_pDotCircleLoadingWin->setGeometry(150, 50, 50, 100);
+    m_pDotCircleLoadingWin->setGeometry(150, 50, 50, 50);
     m_pDotCircleLoadingWin->setDotCount(10);
     m_pDotCircleLoadingWin->setDotColor(QColor("#00B64B"));
     m_pDotCircleLoadingWin->setMaxDiameter(10);
